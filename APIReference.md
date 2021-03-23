@@ -21,7 +21,7 @@ TweakReviewsDB is an API for tweak content and compatibility reviews.
 
 Returns content and compatibility reviews. An example response can be seen below.
 
-```json
+```javascript
 {
   "reviews": [
     {
