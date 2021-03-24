@@ -1,6 +1,8 @@
-# TweakReviewsDB
+# TweakReviewsDB API v3
 
-TweakReviewsDB is an API for tweak content and compatibility reviews.
+This document contains endpoints for TweakReviewsDB API v3. TweakReviewsDB is an app for tweak content and compatibility reviews.
+
+**NOTE:** This API is still in development and it is not yet stable. Breaking changes can and will be made.
 
 ## Glossary
 
@@ -25,10 +27,9 @@ Returns content and compatibility reviews. An example response can be seen below
 {
   "reviews": [
     {
-      "id": 5382,               // content review ID
       "stars": 5,               // {1...5}
       "username": "john.smith", // unique to each user
-      "verified_user": false,   // VIP flag to prevent impersonation
+      "tags": [],               // list of tags
       "content": "This tweak is great!",  // review content
       "version": "1.2.1",       // package version
       "ios": "14.0.1"           // iOS version
@@ -43,6 +44,11 @@ Returns content and compatibility reviews. An example response can be seen below
   }
 }
 ```
+
+The `tags` contains zero or more tags about the reviewer and the source of the review.
+- **`verified`**: This review comes from a trusted person. This tag is given to developers and other important people in the jailbreak community.
+- **`tweakcompatible`**: This review comes from [tweakCompatible](https://github.com/jlippold/tweakCompatible) which is a deprecated platform for tweak reviews.
+- **`moderator`**: This review comes from a moderator of TweakReviewsDB.
 
 Additional URL parameters can be specified in `GET` requests.
 
