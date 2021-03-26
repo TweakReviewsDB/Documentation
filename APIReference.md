@@ -1,5 +1,7 @@
 # TweakReviewsDB API v3
 
+**API Base**: https://api.pixelomer.com/tweakDB
+
 This document contains endpoints for TweakReviewsDB API v3. TweakReviewsDB is an app for tweak content and compatibility reviews.
 
 **NOTE:** This API is still in development and it is not yet stable. Breaking changes can and will be made.
