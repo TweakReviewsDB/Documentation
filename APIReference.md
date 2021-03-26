@@ -58,6 +58,7 @@ There also tags that are not used in the API yet. These tags may be added in the
 - **`postbox`**: This review comes from [PostBox](https://getpostbox.now.sh/).
 
 Additional URL parameters can be specified in `GET` requests.
-- **`includeStatus`:** Specify `0` to exclude compatibility reviews. Defaults to `1`.
-- **`includeReviews`:** Specify `0` to exclude content reviews. Defaults to `1`.
-- **`filterReviews`:** Specify `1` to filter content reviews similar to status reviews. This is not recommended since content reviews are intended to be independent of devices, iOS versions and package versions. Filtering content reviews does not filter by device since a device isn't associated with content reviews. Defaults to `0`.
+- **`includeStatus`**: Specify `0` to exclude compatibility reviews. Defaults to `1`.
+- **`includeReviews`**: Specify `0` to exclude content reviews. Defaults to `1`.
+- **`filterReviews`**: Specify `1` to filter content reviews similar to status reviews. This is not recommended since content reviews are intended to be independent of devices, iOS versions and package versions. Filtering content reviews does not filter by device since a device isn't associated with content reviews. Defaults to `0`.
+- **`keys`**: Comma separated list of keys. When this list is specified, only the specified keys will be included in content review data. This value is ignored when `includeReviews` is `0`.
