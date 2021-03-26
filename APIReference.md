@@ -27,12 +27,12 @@ Returns content and compatibility reviews. An example response can be seen below
 {
   "reviews": [
     {
-      "stars": 5,               // {1...5}
-      "username": "john.smith", // unique to each user
-      "tags": [],               // list of tags
-      "content": "This tweak is great!",  // review content
-      "version": "1.2.1",       // package version
-      "ios": "14.0.1"           // iOS version
+      "stars": 5,                   // {1...5}
+      "username": "john.smith",     // username
+      "tags": [ "tweakreviewsdb" ], // list of tags
+      "content": "Great tweak!",    // review content
+      "version": "1.2.1",           // package version
+      "ios": "14.0.1"               // iOS version
     }
   ],
   
@@ -49,6 +49,7 @@ The `tags` contains zero or more tags about the reviewer and the source of the r
 - **`verified`**: This review comes from a trusted person. This tag is given to developers and other important people in the jailbreak community.
 - **`tweakcompatible`**: This review comes from [tweakCompatible](https://github.com/jlippold/tweakCompatible) which is a deprecated platform for tweak reviews.
 - **`apptapp`**: This review comes from AppTapp Installer 5.
+- **`tweakreviewsdb`**: This review comes from TweakReviewsDB itself.
 
 There also tags that are not used in the API yet. These tags may be added in the future.
 - **`moderator`**: This review comes from a moderator of TweakReviewsDB.
