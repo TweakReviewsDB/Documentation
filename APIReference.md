@@ -48,10 +48,13 @@ Returns content and compatibility reviews. An example response can be seen below
 The `tags` contains zero or more tags about the reviewer and the source of the review.
 - **`verified`**: This review comes from a trusted person. This tag is given to developers and other important people in the jailbreak community.
 - **`tweakcompatible`**: This review comes from [tweakCompatible](https://github.com/jlippold/tweakCompatible) which is a deprecated platform for tweak reviews.
+- **`apptapp`**: This review comes from AppTapp Installer 5.
+
+There also tags that are not used in the API yet. These tags may be added in the future.
 - **`moderator`**: This review comes from a moderator of TweakReviewsDB.
+- **`postbox`**: This review comes from [PostBox](https://getpostbox.now.sh/).
 
 Additional URL parameters can be specified in `GET` requests.
-
 - **`includeStatus`:** Specify `0` to exclude compatibility reviews. Defaults to `1`.
 - **`includeReviews`:** Specify `0` to exclude content reviews. Defaults to `1`.
 - **`filterReviews`:** Specify `1` to filter content reviews similar to status reviews. This is not recommended since content reviews are intended to be independent of devices, iOS versions and package versions. Filtering content reviews does not filter by device since a device isn't associated with content reviews. Defaults to `0`.
