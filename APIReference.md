@@ -19,7 +19,7 @@ This document contains endpoints for TweakReviewsDB API v3. TweakReviewsDB is an
 - **`package`:** Package identifier. Must match the regex `/^[0-9a-zA-Z\\-+._]+$/`.
 - **`version`:** Package version. Must match the regex `/^[0-9a-zA-Z\\-.+:~]+$/`. Specify `any` in `GET` requests to get compatibility reviews for all package versions.
 - **`ios`:** iOS version. Must match the regex `/^[0-9]+\\.[0-9]+(?:\\.[0-9]+)?$/`. Specify `any` in `GET` requests to get compatibility reviews for all iOS versions.
-- **`model`:** iOS version. Must match the regex `/^iP(?:od|hone|ad)[0-9]{1,2},[0-9]{1,2}$/`. Specify `any` in `GET` requests to get compatibility reviews for all device models.
+- **`model`:** Device type. Must match the regex `/^iP(?:od|hone|ad)[0-9]{1,2},[0-9]{1,2}$/`. Specify `any` in `GET` requests to get compatibility reviews for all device models.
 
 #### `GET`
 
