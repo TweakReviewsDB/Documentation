@@ -52,10 +52,10 @@ The `tags` contains zero or more tags about the reviewer and the source of the r
 - **`tweakcompatible`**: This review comes from [tweakCompatible](https://github.com/jlippold/tweakCompatible) which is a deprecated platform for tweak reviews.
 - **`apptapp`**: This review comes from AppTapp Installer 5.
 - **`tweakreviewsdb`**: This review comes from TweakReviewsDB itself.
+- **`postbox`**: This review comes from [PostBox](https://getpostbox.now.sh/).
 
 There also tags that are not used in the API yet. These tags may be added in the future.
 - **`moderator`**: This review comes from a moderator of TweakReviewsDB.
-- **`postbox`**: This review comes from [PostBox](https://getpostbox.now.sh/).
 
 Additional URL parameters can be specified in `GET` requests.
 - **`includeStatus`**: Specify `0` to exclude compatibility reviews. Defaults to `1`.
