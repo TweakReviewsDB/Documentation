@@ -29,12 +29,13 @@ Returns content and compatibility reviews. An example response can be seen below
 {
   "reviews": [
     {
-      "stars": 5,                   // {1...5}
-      "username": "john.smith",     // username
-      "tags": [ "tweakreviewsdb" ], // list of tags
-      "content": "Great tweak!",    // review content
-      "version": "1.2.1",           // package version
-      "ios": "14.0.1"               // iOS version
+      "stars": 5,                   // {1...5} ......... non-null
+      "username": "john.smith",     // username ........ nullable
+      "tags": [ "tweakreviewsdb" ], // list of tags .... non-null
+      "content": "Great tweak!",    // review content .. non-null
+      "version": "1.2.1",           // package version . nullable
+      "ios": "14.0.1",              // iOS version ..... nullable
+      "date": "2020-02-26T19:18:57.000Z"   // date ..... nullable
     }
   ],
   
